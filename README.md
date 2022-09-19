@@ -7,3 +7,15 @@ When launched a blank Hymn Board bug is visible, hovering over any blank number 
 ![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](HymnBoardUI.jpg)
 ![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](HowToAddOverLayToOBS.jpg)
 ![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](HowToInteract.jpg)
+Hover to Edit
+![Blank positions are edit buttons](HoverToEdit.jpg)
+When full click here to Edit
+![Card storage is always an Edit button](HoverHereToEditWhenHymnBoardIsFull.jpg)
+Type in fields to update Hymn Board
+![Hymn Board updates instantly](TypingPutsNumberCardsInNumberBoard.jpg)
+Click Done to hide editor
+![Editor goes away when you click Done](ClickDoneToHideEntryFields.jpg)
+If you click on a Hymn Number in the Hymn Board the Hymn Board hides and the title of the Hymn is displayed
+![Hide Bug show Text](ClickHymnNumberToHideHymnBoardAndDisplayHymnTitle.jpg)
+The title for the Hymn Number you clicked on is displayed, click the title to hide it and display the Bug again.
+![Click to hide text](ClickHymnTitleToHideItAndShowHymnBoard.jpg)
