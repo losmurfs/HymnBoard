@@ -9,7 +9,7 @@ When launched a blank Hymn Board bug is visible, hovering over any blank number 
 ![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](docs/images/HowToAddOverLayToOBS.jpg)
 ![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](docs/images/HowToInteract.jpg)
 
-Hover to Edit
+Hover to Edit, click Edit
 
 ![Blank positions are edit buttons](docs/images/HoverToEdit.jpg)
 
