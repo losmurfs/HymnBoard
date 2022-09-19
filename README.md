@@ -30,6 +30,8 @@ The title for the Hymn Number you clicked on is displayed, click the title to hi
 ## Installation
 mkdir HymnBoard
 
+cd HymnBoard
+
 git clone https://github.com/losmurfs/HymnBoard
 
 If you don't have Java 18, install it (this is for creating a simple static web server, if you already have one, you can use that instead):
