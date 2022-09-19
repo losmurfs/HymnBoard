@@ -5,3 +5,5 @@ OBS Studio has a Browser overlay.  If you host this project and then point a Bro
 ![Here, a hymn number was clicked on causing the Bug to fade out while the text faded in](HymnNumberAndTitleOverlay.jpg)
 When launched a blank Hymn Board bug is visible, hovering over any blank number row shows a Edit button, when all the rows are populated the card shelf can be clicked on to enable Edit.
 ![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](HymnBoardUI.jpg)
+![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](HowToAddOverLayToOBS.jpg)
+![Unfortunately OBS Browser Overlays cannot be interacted with directly so you have to open a seperate window to interact with the Overly](HowToInteract.jpg)
