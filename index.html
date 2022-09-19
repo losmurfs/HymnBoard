@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hymn Board</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="hymn board bug">
+      <button type="button" class="hymn one hidden">Edit</button>
+      <button type="button" class="hymn two hidden">Edit</button>
+      <button type="button" class="hymn three hidden">Edit</button>
+      <button type="button" class="hymn four hidden">Edit</button>
+      <button type="button" class="hymn five hidden">Edit</button>
+      <button type="button" class="hymn edit hidden">Edit</button>
+    </div>
+    <div class="hymn board editor hidden">
+	  <label for="hymn1">Hymn One:</label><input type="text" id="hymn1"/>
+	  <label for="hymn2">Hymn Two:</label><input type="text" id="hymn2"/>
+	  <label for="hymn3">Hymn Three:</label><input type="text" id="hymn3"/>
+	  <label for="hymn4">Hymn Four:</label><input type="text" id="hymn4"/>
+	  <label for="hymn5">Hymn Five:</label><input type="text" id="hymn5"/>
+	  <button type="button">Done</button>
+    </div>
+    <div class="hymn title hidden">
+      <button type="button">#1 - I forget</button>
+    </div>
+    <div class="output"></div>
+  </body>
+</html>

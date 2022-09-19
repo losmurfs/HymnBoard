@@ -1,0 +1,124 @@
+/*
+   4k TV: 4096 x 2160
+   
+   @screenWidth:  4096px;
+   @screenHeight: 2160px;
+   
+   Full HD TV: 1920 x 1080
+   
+   @screenWidth:  1920px;
+   @screenHeight: 1080px;
+   
+   Digital SD TV: 720 x 480
+   
+   @screenWidth:  720px;
+   @screenHeight: 480px;
+   
+   NTSC TV: 704 x 480
+   
+   @screenWidth:  704px;
+   @screenHeight: 480px;
+ */
+@screenWidth:  1920px;
+@screenHeight: 1080px;
+
+html,body {
+  background-color: transparent;
+}
+.hymn.board.bug {
+  width: calc( @screenWidth / 12);
+  height: calc( @screenHeight / 4);
+  padding: calc(@screenHeight / 38) 0 0 0;
+  float: left;
+  background: url('HymnBoard.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  font-family: Arial, Helvetica;
+  font-weight: 900;
+  display: block;
+  button.hymn {
+    border: none;
+    color: white;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-align: center;
+    width: 100%;
+    height: calc( 100% / 6.8);
+    display:block;
+    div {
+      display: inline-block;
+      background: white;
+      font-size: clamp(1rem, -5.25rem + 7vw, 3.5rem);
+      border: 1px solid #ddd;
+      width: calc( @screenWidth * 0.011 );
+      height: calc( ( @screenWidth * 0.011 ) * 1.285 );
+      text-align: center;
+      vertical-align: middle;
+      margin: 0 1px 0 0;
+      color: black;
+    }
+    span.digit:nth-child(1) {
+      margin-left: 5px !important;
+    }
+  }
+  button.hymn.edit {
+    margin: calc(@screenHeight / 33) 0 0 0;
+  }
+  button.hymn.hidden:hover {
+    color: white;
+  }
+  .one span {
+    margin: 92px 1px 0 0 !important;
+  }
+  .four span,.five span {
+    margin: 26px 1px 0 0 !important;
+  }
+}
+.hidden, .hymn.board.bug button.hymn.hidden {
+  color: transparent;
+}
+div.hidden {
+  display: none;
+}
+
+.hymn.board.editor {
+  width: calc( @screenWidth * 0.25);
+  position: absolute;
+  height: calc( @screenHeight * 0.66);
+  left: 33%;
+}
+
+label,input {
+  width: 75%;
+  display: block;
+}
+label {
+  padding:15px 0 5px;
+}
+input,button {
+  padding:15px;
+}
+button {
+  margin-top: 5px;
+}
+
+div.hymn.title {
+  position: absolute;
+  text-align: center;
+  bottom: calc( @screenHeight / 12);
+  width: 100%;
+  left: 0;
+  button {
+    background-color: rgba(9,9,9,0.5);
+    color: white;
+    border: none;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    font-size: calc( @screenHeight * 0.05);
+  }
+}
