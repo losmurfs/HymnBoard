@@ -24,16 +24,18 @@
 
 html,body {
   background-color: transparent;
+  width: @screenWidth;
+  height: @screenHeight;
 }
 .hymn.board.bug {
   width: calc( @screenWidth / 12);
   height: calc( @screenHeight / 4);
-  padding: calc(@screenHeight / 38) 0 0 0;
+  padding: calc(@screenHeight / 37) 0 0 0;
   float: left;
-  background: url('HymnBoard.png');
+  background: url('HymnBoard.png'),url('HymnBoardShadowBigger50.png'),url('HymnBoardShadowBigger25.png');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  background-position: center 3px, 4px 0px, -1px 0px;
+  background-size: calc(1920px / 13) calc(1080px / 3.7), calc(1920px / 12) calc(1080px / 3.58), calc(1920px / 12) calc(1080px / 3.62);
   font-family: Arial, Helvetica;
   font-weight: 900;
   display: block;
@@ -41,7 +43,7 @@ html,body {
     border: none;
     color: white;
     background-color: transparent;
-    padding: 0;
+    padding: 0 0 0 calc(100% / 56);
     margin: 0;
     text-align: center;
     text-align: center;
@@ -53,8 +55,8 @@ html,body {
       background: white;
       font-size: clamp(1rem, -5.25rem + 7vw, 3.5rem);
       border: 1px solid #ddd;
-      width: calc( @screenWidth * 0.011 );
-      height: calc( ( @screenWidth * 0.011 ) * 1.285 );
+      width: calc( @screenWidth * 0.01225 );
+      height: calc( ( @screenWidth * 0.01225 ) * 1.285 );
       text-align: center;
       vertical-align: middle;
       margin: 0 1px 0 0;

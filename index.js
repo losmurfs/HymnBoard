@@ -53,8 +53,8 @@ function hymnLinesToHymnMap()
 }
 
 $(
-  function(){
-    $('a').hide();
+  function()
+  {
     $('[id^=hymn]').on('keyup',hymnNumber);
     $('.hymn.bug button').on('click',function(){
       const $button = $(this);
