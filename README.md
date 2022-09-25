@@ -1,4 +1,5 @@
 # HymnBoard
+Note: with some browser extensions, this will not work when playing with it in Google Chrome for example, but it will work in OBS Studio because OBS Studio will not inject CSS unless you tell it to. Because Edit is not visible until you hover over it, "for your safety" Chrome might hard code it, via inject stylesheet, to display: none !important. You needent worry about this, but if you'd like to debug/modify/etc in Google Chrome, disabling all extensions/AdBlockers/etc will usually get rid of the injected stylesheet that makes it unusable.
 ## Usage:
 A web page as an OBS Studio overlay for displaying the Hymn numbers of a church service and the current hymn number and title
 ![This is what it looks like when the Hymn Board Bug has been set up and is visible](docs/images/HymnBoardBug.jpg)
