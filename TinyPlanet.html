@@ -13,19 +13,34 @@
         height: 100vh;
         overflow: hidden;
       }
-      img {
-        /*
-         * 1. Use a square image
-         * 2. If pixelated, use higher resolution
-         */
-        width: 120vw; /* make img wide enough that we never have white corners */
+      @media (orientation: landscape) {
+        img {
+          /*
+           * 1. Use a square image
+           * 2. If pixelated, use higher resolution
+           */
+           width: 120vw; /* make img wide enough that we never have white corners */
+           display: block;
+           margin-top:calc((100vh - 120vw) / 2); /* center img vertically in div */
+           margin-left:calc((100vw - 120vw) / 2); /* center img horizontally in div */
+           image-rendering: smooth;
+           animation: rotation 360s infinite linear;
+           aspect-ratio: 1;
+        }
+      }
+
+      @media (orientation: portrait) {
+        img {
+        width: 125vh;
         display: block;
-        margin-top:calc((100vh - 120vw) / 2); /* center img vertically in div */
-        margin-left:calc((100vw - 120vw) / 2); /* center img horizontally in div */
+        margin-top:calc((100vh - 125vh) / 2);
+        margin-left:calc((100vw - 125vh) / 2);
         image-rendering: smooth;
         animation: rotation 360s infinite linear;
         aspect-ratio: 1;
       }
+      }
+      
       @keyframes rotation {
         from {transform: rotate(0deg);}
         to {transform: rotate(-359.999deg);}
